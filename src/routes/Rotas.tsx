@@ -1,15 +1,24 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "../page/home/Home";
+import "../App.css";
+import { Header } from "../components/header/Header";
+import About from "../page/about/About";
 
 export default function Rotas() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/home" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+
+        <Header/>
+
+        <BrowserRouter>
+            <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/about" element={<About/>} />
+
+                <Route path="*" element={<Navigate to="/home"/>}/>
+            </Routes>
+        </BrowserRouter>
     </>
   );
 }
