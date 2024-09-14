@@ -7,7 +7,6 @@ import organize from "../../organize.png";
 export default function Home() {
   return (
     <>
-      <img src={Bg} alt="" className="bg-hero" />
       <div className="hero">
         <h1>Welcome to a Web Budget Manager</h1>
         <p>
@@ -15,7 +14,12 @@ export default function Home() {
         </p>
       </div>
       
+
+      <h1 className="about-project">About the project</h1>
       <div className="cards">
+
+        
+
         <div className="content1 card">
           <img src={budget} alt="" className="icon" />
           <p>

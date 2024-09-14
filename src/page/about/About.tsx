@@ -1,6 +1,7 @@
 import profile from "../../profile.jpeg";
-import github from "../../github.png"
-import linkedin from "../../linkedin.png"
+import github from "../../github.png";
+import linkedin from "../../linkedin.png";
+import gmail from "../../gmail.png";
 import "./style.css";
 
 export default function About() {
@@ -27,16 +28,22 @@ export default function About() {
       </div>
       <div className="contact">
         <h2>Contact with me</h2>
-        <ul>
+        <ul className="contacts">
           <div className="github">
-                <img src={github} alt="github" className="icons"/>
-                <a href="https://github.com/GabrielSS04" target="_blank">GitHub</a>
+            <a href="https://github.com/GabrielSS04" target="_blank">
+              <img src={github} alt="github" className="icons" />
+            </a>
           </div>
           <div className="linkedin">
-                <img src={linkedin} alt="linkedin" className="icons"/>
-                <a href="" target="_blank">Linked-in</a>
+            <a href="https://www.linkedin.com/in/gabrielss04/" target="_blank">
+              <img src={linkedin} alt="linkedin" className="icons" />
+            </a>
           </div>
-          
+          <div className="gmail">
+            <a href="mailto: gssouzasoftware@gmail.com" target="_blank">
+              <img src={gmail} alt="gmail" className="icons" />
+            </a>
+          </div>
         </ul>
       </div>
     </>

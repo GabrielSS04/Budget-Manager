@@ -1,61 +1,89 @@
-.info{
+:root {
+    --background-color: #d3d3d3;
+    --primary-text-color: #1c3c0d;
+    --secondary-text-color: #b0ffcb;
+    --primary-color: #202020;
+    --terceary-color: #474747;
+    --body: #303030;
+    --secondary-color: #2b8700;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .info {
     display: flex;
     gap: 160px;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-
-}
-
-.profile{
-    margin: 100px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .profile {
+    margin: 50px;
     width: 20%;
     box-shadow: 0px 0px 50px rgba(87, 204, 29, 0.47);
     border-radius: 100%;
-    transition-duration: .2s;
-}
-
-.profile:hover{
+    transition-duration: 0.2s;
+  }
+  
+  .profile:hover {
     width: 21%;
     transform: translate(-3%, -3%);
     box-shadow: 0px 0px 70px rgba(120, 207, 77, 0.47);
-}
-
-.content-about{
+  }
+  
+  .content-about {
     padding: 20px;
     width: 500px;
-
     text-align: center;
-}
-
-.content-about p {
+  }
+  
+  .content-about p {
     font-size: 15pt;
-}
-
-.contact{
-    background: grey;
+  }
+  
+  .contact {
+    background: var(--body);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
     width: 400px;
     padding: 20px;
     border-radius: 20px;
     text-align: center;
-    margin: auto;
-    margin-top: 100px;
-}
-
-.contact ul div a {
-    color: black;
-}
-
-.contact ul div a:hover{
-    color: black;
-}
-
-.icons{
+    margin: 100px auto;
+  }
+  
+  .contact ul div a {
+    text-align: center;
+  }
+  
+  .contact ul div a:hover {
+    text-decoration: none;
+  }
+  
+  .icons {
     width: 40px;
-}
-
-.github, .linkedin{
-    background-color: lightgray;
+  }
+  
+  .contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .github,
+  .linkedin,
+  .gmail {
+    background-color: var(--terceary-color);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -63,4 +91,115 @@
     margin: 15px;
     gap: 10px;
     text-align: center;
-}
+    transition-duration: 0.2s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .github:hover {
+    background-color: var(--background-color);
+    box-shadow: 0px 5px 15px rgba(133, 133, 133, 0.4);
+  }
+  
+  .linkedin:hover {
+    background-color: rgb(54, 135, 235);
+    box-shadow: 0px 5px 15px rgb(54, 135, 235, 0.4);
+  }
+  
+  .gmail:hover {
+    background-color: rgb(247, 84, 84);
+    box-shadow: 0px 5px 15px rgb(247, 84, 84, 0.4);
+  }
+  
+  @media (max-width: 768px) {
+    .info {
+      flex-direction: column;
+      gap: 50px;
+      margin-top: 30px;
+    }
+  
+    .profile {
+      width: 40%;
+      margin: 0 auto;
+    }
+  
+    .content-about {
+      width: 80%;
+    }
+  
+    .contact {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile {
+      width: 60%;
+    }
+  
+    .content-about {
+      width: 100%;
+    }
+  
+    .content-about p {
+      font-size: 12pt;
+    }
+  
+    .contact {
+      width: 90%;
+    }
+  
+    .icons {
+      width: 30px;
+    }
+  
+    .github,
+    .linkedin,
+    .gmail {
+      padding: 5px;
+    }
+  }
+  
+
+@media (max-width: 768px) {
+    .info {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile {
+      margin-bottom: 20px;
+    }
+  
+    .content-about {
+      max-width: 100%;
+      margin: 0 20px;
+    }
+  
+    .contacts {
+      flex-direction: column;
+    }
+  
+    .icons {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .icons {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .content-about h1 {
+      font-size: 24px;
+    }
+  
+    .content-about p {
+      font-size: 14px;
+    }
+  }
