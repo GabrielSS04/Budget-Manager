@@ -7,12 +7,12 @@
     --secondary-color: #2b8700;
   }
   
-  strong {
+  .hero strong {
     color: var(--secondary-color);
     transition-duration: 0.2s;
   }
   
-  strong:hover {
+  .hero strong:hover {
     font-size: 13pt;
     color: var(--secondary-text-color);
   }
@@ -161,5 +161,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .text-products{
+    max-width: 800px;
+    text-align: center;
   }
   

@@ -1,0 +1,102 @@
+.grafico-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #4a4a4a; 
+    border-radius: 12px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  .grafico-container .recharts-wrapper {
+    max-width: 100%; 
+    height: 100%;
+  }
+  
+  .recharts-tooltip-wrapper {
+    background-color: rgba(0, 0, 0, 0.75); 
+    border-radius: 8px;
+    color: #fff; 
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  
+  
+  .recharts-legend-item text {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333; 
+  }
+  
+  .recharts-legend-item .recharts-legend-icon {
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .totals {
+    margin: 100px 0px;
+    text-align: center;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 100px;
+  }
+  
+  .totals p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .totals p strong {
+    color: #009762; 
+  }
+  
+  .totals p.difference {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff7300; 
+  }
+  
+  .recharts-legend-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .recharts-legend-item {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .grafico-container {
+      padding: 10px;
+    }
+  
+    .totals {
+      padding: 15px;
+    }
+  
+    .totals p {
+      font-size: 16px;
+    }
+  
+    .totals p.difference {
+      font-size: 18px;
+    }
+  }

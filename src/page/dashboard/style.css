@@ -1,0 +1,6 @@
+.cruds{
+    display: flex;
+    gap: 200px;
+    align-items: baseline;
+    justify-content: center;
+}

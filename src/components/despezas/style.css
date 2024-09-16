@@ -1,0 +1,90 @@
+.component-dashboard{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.form-criar-desp{
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    
+    background-color: gray;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    
+}
+
+.form-criar-desp input{
+    width: 350px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.422);
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.form-criar-desp button{
+    width: 250px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.377);
+    cursor: pointer;
+    transition-duration: .3s;
+
+    background-color: darkgreen;
+
+    font-weight: bolder;
+
+}
+
+.form-criar-desp button:hover{
+    background-color: lightgreen;
+    color: darkgreen;
+    transform: scale(1.05);
+}
+
+.list-desp{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 100px;
+}
+
+.list-desp li{
+    display: flex;
+    justify-content: space-between;
+
+
+    background-color: lightgray;
+    padding: 15px;
+    width: 400px;
+    border-radius: 20px;
+    color: darkgreen;
+}
+
+.remove{
+    border: none;
+    background-color: lightgray;
+
+    cursor: pointer;
+    font-weight: bolder;
+
+}
